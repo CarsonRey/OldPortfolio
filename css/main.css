@@ -1,0 +1,1174 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+/***** GLOBAL STYLES *****/
+
+
+html, body {
+  font-family: 'Source Sans Pro', sans-serif;
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+header main{
+  width:100%;
+  padding-right: 1px;
+}
+
+#about {
+    height: 570px;
+    width:100%;
+}
+#contact {
+   height: 500px;
+   width:100%;
+}
+
+ #skills{
+   height: 600px;
+   width: 100%;
+ }
+
+#work{
+  height:900px;
+  width: 100%;
+}
+/***** GRID *****/
+
+
+.full-width {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.half-width {
+    width: 100%;
+    float: left;
+}
+
+.third-width {
+    width: 100%;;
+    float: left;
+}
+
+/*** STYLE FOR HEADER ***/
+
+header {
+    height: 400px;
+    background: url('../img/full-background.png');
+    background-size: cover;
+}
+
+  header h1 {
+    padding: 5% 10% 5% 22%;
+    font-size: 30px;
+    font-family:'Lora', serif;
+    color: #bbc085;
+    margin: 0;
+    width: 100%;
+}
+
+nav ul{
+  padding: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 0 3% 0 3%;
+    padding-bottom: 4%;
+}
+nav ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+
+    font-size: 15px;
+    color: #828282;
+    padding-left: 10%;
+}
+
+header h2 {
+    width:90%;
+    clear:both;
+    font-family:'Lora', serif;
+    font-size:26px;
+    line-height: 34px;
+    color: #9a9b9b;
+    padding: 20px 0;
+    margin: 0 5%;
+}
+
+header h2 span {
+    color: #262a2b;
+}
+/*** STYLE FOR ABOUT ***/
+
+
+#about .full-width {
+    padding:0;
+    margin: 0 3%;;
+    height: 80%;
+}
+
+#about h2 {
+  font-family: 'Lora', serif;
+  font-size: 33px;
+  margin-bottom: 10px;
+  padding: 2% 0 0 0%;
+  text-align: center;
+}
+
+#about .half-width p{
+  font-size: .9em;;
+  color:#7f7f7f;
+  line-height: 22px;
+  display: block;
+  text-align: center;
+}
+
+.about-content{
+  max-height: 450px;
+  width:90%;
+}
+
+/*** STYLE FOR SKILLS ***/
+
+#skills {
+  background-color: #f9ceb7;
+  text-align: center;
+}
+
+#skills .full-width{
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+}
+
+#skills img{
+  padding: 8px 0 10px 0;
+  max-width: 15%;
+}
+
+#skills h3{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 15px;
+  width:auto;
+  margin: 0 auto;
+}
+
+#skills p {
+    font-family: 'Lora', serif;
+    font-size: .9em;
+    line-height:22px;
+    color: #262a2b;
+    margin: 0 3% 0 3%;
+}
+
+.skills {
+
+  width: 100%;
+}
+
+/*** STYLE FOR WORK ***/
+
+#work {
+  background-color:#D5DCC1;
+  width: 100%;
+  padding-top: 1px;
+}
+
+#work h1{
+
+  text-align: center;
+  line-height: .5em;
+  font-size: 1.5em;
+}
+#work h2 {
+  text-align: center;
+  line-height: .9em;
+  font-size: 1.1em;
+  font-weight: lighter;
+}
+
+.w3-row{
+Display:flex;
+display: -webkit-box;
+display: -moz-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+justify-content: space-around;
+List-style: none;
+Margin: 0;
+Padding: 0;
+font-size: 1.5em;
+	}
+
+.tab-content{
+  height:100%;
+}
+.c-tab_content1{
+  height: 300px;
+  margin: 0 25% 0 28%;
+}
+#london .slideshow{
+  height: 300px;
+}
+ #work .mytake p{
+  font-size: .9em;
+}
+#work #mobile img{
+  max-width: 86%;
+  max-height: 60%;
+}
+
+.c-tab_content2{
+  height: 357px;
+  margin: 0;
+}
+#work #tablet img{
+  max-width: 68%;
+  max-height: 72%;
+}
+#work #tablet {
+  padding-left: 0;
+}
+
+.c-tab_content3{
+  height: 300px;
+}
+
+#work #desktop img{
+  padding: 3% 0 0 0;
+}
+
+
+.mytake p {
+  font-family: 'Lora', serif;
+  font-size: .9em;
+  line-height: 1.5em;
+  padding:0 3%;
+  height:50%;
+  width:95%;
+  text-align: center;
+}
+
+.mytake-tab{
+  font-family: 'Lora', serif;
+  font-size: .8em;
+  line-height: 1.5em;
+  padding:0 3%;
+  height:50%;
+  width:95%;
+  text-align: center;
+}
+
+.mytake-desk p, .mytake-desk h2{
+  font-family: 'Lora', serif;
+  font-size: .9em;
+  line-height: 1.5em;
+  padding:0 3%;
+  height:50%;
+  width:325%;
+  text-align: center;
+
+}
+
+.skillcrush{
+  padding: 0;
+  text-decoration: underline;
+  font-weight: bold;
+  color: #89936E;
+}
+
+.w3-row i:hover{
+  	Color: #fff;
+}
+
+#work .w3-row a{
+  text-decoration: none;
+  font-family: 'lora';
+  font-weight: lighter;
+  font-size: 1.4em;
+  color: #89936E;
+}
+
+.w3-container city {
+	Flex:1;
+	Margin-right:4px;
+	Padding: 12px;
+	Color: #fff;
+	Background-color: #b3b3b3;
+	Text-align:center;
+	Transition: color 0.3s;
+}
+
+.c-tabs-nav_link: last-child {
+	Margin-right: 0;
+}
+.c-tabs-nav_link:hover{
+	Color: #6d6d6d;
+}
+.c-tabs-nav_link.is-active {
+	Color: #f9ceb7; /*---change to peachy color---*/
+	Background-color: #e7e7e7;
+}
+.c-tabs-nav_link i {
+	Margin: 0;
+	Padding: 0;
+	Line-height: 1;
+	Font-size: 1em;
+}
+/** tab **/
+.c-tab {
+		Display: none;
+		Background-color: #e7e7e7;
+	}
+	.c-tab.is-active {
+		Display: block;
+	}
+
+
+
+
+/*** STYLE FOR CONTACT ***/
+
+#contact {
+  background-color: #ebebeb;
+  text-align: center;
+}
+
+.contact-content{
+  height: 100%;
+}
+
+.half-width{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#contact .full-width {
+    padding: 10% 0;
+    height:63%;
+    width: 100%;
+
+}
+
+
+#contact-img {
+    border: 12px solid #ffffff;
+    width:80%;
+    width:auto;
+    margin: 0 auto;
+}
+
+#contact-info{
+  font-size: 1.2em;
+}
+
+#contact h2, #email-header, #socialmedia-header, #contact ul {
+    padding:none;
+}
+
+#envelope {
+    padding: 0 5px 0 15px;
+    float: left;
+    max-width: 8%;
+}
+
+#contact h2 {
+    font-family: 'Lora', serif;
+    font-size: 28px;
+    text-align: center;
+}
+
+#email-header{
+    font-size: 27px;
+    font-weight: lighter;
+    margin: -30px 0 5px 0;
+    text-align: center;
+}
+
+#socialmedia-header {
+    font-weight: bold;
+    font-size: 15px;
+    margin: 40px 0 0 0;
+    text-align: center;
+}
+#contact a {
+    text-decoration: none;
+    color: #c49075;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 0 19%;
+    float: left;
+}
+
+#contact ul {
+    list-style: none;
+    text-align: center;
+}
+
+#contact ul li {
+     display: inline-block;
+}
+
+#contact ul img {
+    padding-right: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+
+
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media screen and (min-width:375px){
+  /*---LARGER PHONE STYLES HERE-----*/
+
+/*----- GLOBAL ---*/
+      #about {
+          height: 515px;
+          width:100%;
+      }
+
+      #skills{
+         height: 600px;
+         width: 100%;
+       }
+
+      #work{
+        height:860px;
+        width: 100%;
+      }
+
+      #contact {
+         height: 520px;
+         width:100%;
+      }
+/*----- HEADER ---*/
+
+      header h1{
+        padding: 6% 0 10% 27%;
+      }
+
+      nav ul li a{
+        font-size: 19px;
+      }
+
+/*----- ABOUT ---*/
+
+    #about .full-width{
+      margin: 0 5%;
+    }
+
+/*----- WORK ---*/
+
+    .c-tab_content1{
+      height:370px;
+      margin: 0 30% 0 25%;
+    }
+    #work #mobile img {
+      max-width: 95%;
+      max-height: 75%;
+    }
+
+    .c-tab_content2{
+      height: 375px;
+      margin: 0 20% 0 18%;
+    }
+
+    .c-tab_content3{
+      height: 320px;
+    }
+    #work #desktop img {
+      max-width: 54%;
+      max-height: 55%;
+    }
+
+    #paris.mytake p, #tokyo.mytake p{
+      line-height: 1.8em;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+  /*---TABLET STYLES HERE-----*/
+  /***** GRID *****/
+
+  .full-width {
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+  }
+
+  .half-width {
+      width: 45%;
+      float: left;
+  }
+
+  .third-width {
+      width: 33%;;
+      float: left;
+}
+
+#about, #skills, #contact {
+    height: 450px;
+    width:100%;
+}
+
+#work{
+  height:550px;
+  width: 100%;
+}
+/***** HEADER *****/
+
+  header {
+      height: 650px;
+      background: url('../img/full-background.png');
+      background-size: cover;
+  }
+  header h1 {
+    padding: 5% 0 5% 5%;
+    width: 30%;
+    float: left;
+  }
+
+nav {
+  padding: 5% 0 5% 0;
+  width:65%;
+  float: left;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul {
+  width: 80%;
+}
+
+  header h2{
+    width: 90%;
+    clear: both;
+    font-family: 'Lora', serif;
+    font-size: 66px;
+    line-height: 85px;
+    color: #9a9b9b;
+    padding: 20px 0;
+    margin-left: 30px;
+  }
+
+
+  /*---ABOUT STYLES-----*/
+
+  #about .full-width {
+      padding:0;
+      margin: 0;
+      height: 80%;
+      display: flex;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      align-items: center;
+      justify-content: space-around;
+  }
+
+    #about h2 {
+      font-family: 'Lora', serif;
+      font-size: 36px;
+      margin:0;
+      padding: 3% 0 0 5%;
+      float: left;
+    }
+
+    #about .half-width p{
+      font-family: 'Lora', serif;
+      font-size: 1em;
+      color:#7f7f7f;
+      line-height: 1.6em;
+      text-align: left;
+      display: block;
+      padding: 0 0 0 5%;
+    }
+
+    .about-content{
+      display:flex;
+      align-content: center;
+      justify-content: space-around;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      max-height: 450px;
+      width:100%;
+    }
+
+
+    /*---SKILLS STYLES-----*/
+    #skills {
+      background-color: #f9ceb7;
+      text-align: center;
+    }
+
+    #skills .full-width{
+      height: 100%;
+      display: flex;
+      align-items: center;
+
+    }
+
+    #skills img{
+      padding-bottom: 30px;
+      max-width: 25%;
+    }
+
+    #skills h3{
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 23px;
+      width:auto;
+      margin: 0 auto;
+    }
+
+    #skills p {
+        font-family: 'Lora', serif;
+        font-size: 1em;
+        line-height:1.6em;
+        color: #262a2b;
+        padding: 0 35px;
+    }
+
+    .skills {
+      display: flex;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      align-content: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+
+    /*---WORK STYLES-----*/
+    #work .w3-row {
+      width: 50%;
+      margin: 0 25%;
+      display: flex;
+      justify-content: space-around;
+}
+
+    #work .slideshow{
+      width:40%;
+      float: left;
+}
+    .c-tab_content1{
+      height:370px;
+      margin: 0 30% 0 25%;
+}
+    #london .slideshow{
+      width: 30%;
+}
+    .mytake {
+      width: 60%;
+      font-size: .8em;
+      float: left;
+}
+    #work #mobile img {
+      max-width: 110%;
+    }
+
+    .c-tab_content2{
+      height: 375px;
+      margin: 0 20% 0 18%;
+    }
+
+
+    .c-tab_content3{
+      height: 320px;
+      width: 60%;
+      float: left;
+    }
+
+    }
+    #work #desktop img {
+      max-width: 54%;
+      max-height: 55%;
+      margin-left: 0%;
+    }
+
+
+    .mytake p, .mytake-tab p{
+      font-size: 1.2em;
+      line-height: 1.6em;
+    }
+
+    .mytake-desk p, .mytake-desk h2{
+      display:flex;
+      justify-content: space-around;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      width: 93%;
+      float: left;
+      margin: 2% 0 0 2%;
+    }
+
+    .c-tab_content2{
+      margin: 0 0 0 9%;
+}
+
+    #Paris .mytake{
+      width: 50%;
+      float: left;
+      padding-left: 5%;
+      margin-right: 5%;
+}
+
+    /*---CONTACT STYLES-----*/
+
+    .contact-content{
+      display:flex;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      align-content: center;
+      align-items: center;
+      justify-content: space-around;
+      height: 100%;
+    }
+
+    #contact .full-width {
+        padding: 10% 0;
+        height:63%;
+    }
+
+
+    #contact .half-width #contact-img{
+      display: flex;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      justify-content: center;
+    }
+
+    #contact-img {
+        border: 12px solid #ffffff;
+        width:100%;
+        max-width: 779px;
+        margin-left: 7%;
+    }
+
+    #contact h2, #email-header, #socialmedia-header, #contact ul {
+        padding-left: 100px;
+        width: 65%;
+        text-align: center;
+        margin: 0;
+    }
+
+    #envelope {
+      width: 15%;
+    }
+
+    #contact h2 {
+        font-family: 'Lora', serif;
+        font-size: 27px;
+    }
+
+    #email-header{
+        font-size: 26px;
+        font-weight: lighter;
+    }
+    #socialmedia-header {
+        font-weight: bold;
+        font-size: 22px;
+    }
+    #contact a {
+        text-decoration: none;
+        color: #c49075;
+        font-weight: bold;
+        font-size: 22px;
+        width: 65%;
+        text-align: center;
+    }
+
+
+
+
+@media screen and (min-width: 940px) {
+    /*---DESKTOP STYLES HERE-----*/
+
+    header h1 {
+        padding: 4% 0 5% 5%;
+        width: 30%;
+        float: left;
+    }
+
+    nav {
+    padding: 4% 2% 5% 0;
+    width: 63%;
+    float: left;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+    /*---ABOUT STYLES-----*/
+
+    #about .half-width p {
+      font-size: 1.1em;
+      line-height: 1.9em;
+    }
+
+
+    /*---SKILLS STYLES-----*/
+
+    /*---WORK STYLES-----*/
+    #work .slideshow, #work #london .mytake, #work #paris .mytake {
+      width: 40%;
+      margin: 0;
+      float: left;
+  }
+
+  .mytake p, .mytake-desk p {
+    text-align: left;
+    font-size: 18px;
+  }
+
+  #work .mytake h2, #work .mytake-desk h2 {
+    text-align: left;
+    padding-left: 4%;
+    font-size: 26px;
+  }
+
+    #work #mobile img {
+      max-width: 95%;
+    }
+    #work #tablet img{
+      padding: 0 0 0 25%;
+    }
+    #work #desktop img {
+      max-width: 72%;
+      max-height: 69%;
+      margin: 0 0 0 13%;
+    }
+    .c-tab_content3 {
+      display: flex;
+      justify-content: center;
+    }
+    .mytake-desk{
+      margin: 3% 0 0 3%;
+    }
+
+    /*---CONTACT STYLES-----*/
+    #contact{
+      height: 100%;
+    }
+
+    #contact-img {
+      margin: 0 0 0 11%;
+      max-width: 94%;
+    }
+
+    #contact h2{
+      font-size: 35px;
+    }
+    #email-header{
+      font-size: 32px;
+    }
+    #envelope{
+      width: 20%;
+    }
+    #contact a {
+      font-size: 29px;
+      width: 65%;
+    }
+    #socialmedia-header{
+      font-size: 30px;
+      width: 75%;
+      margin: 0 3% 0 0;
+    }
+    #contact ul li a img {
+      width: 140%;
+    }
+    #contact ul {
+      display: flex;
+      justify-content: space-around;
+    }
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
